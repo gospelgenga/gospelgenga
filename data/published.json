@@ -401,7 +401,21 @@
    "published_sgt": "2026-10-07 04:00",
    "duration_s": 677,
    "views_at_snapshot": 3314
+  },
+  {
+   "id": "genesis-05",
+   "youtube_id": "366bWHORqNQ",
+   "url": "https://www.youtube.com/watch?v=366bWHORqNQ",
+   "title": "A FATHER'S HOPE BEFORE THE FLOOD. (Genesis 5 Bible Anime)",
+   "lane": "genesis",
+   "book": "Genesis",
+   "chapters": "5",
+   "published_sgt": "2026-10-09 04:00",
+   "duration_s": 584,
+   "views_at_snapshot": 42,
+   "added_by": "GospelGenga Studio",
+   "added_at": "2026-10-09T04:24:55+08:00"
   }
  ],
- "stats_fetched_at": "2026-10-09T04:12:41+08:00"
+ "stats_fetched_at": "2026-10-09T05:22:28+08:00"
 }
