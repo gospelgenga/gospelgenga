@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gospelgenga.com/sitemap.xml

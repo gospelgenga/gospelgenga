@@ -1,0 +1,89 @@
+{
+ "duration": 28.39,
+ "clips": [
+  {
+   "t": 0.0,
+   "book": "Genesis",
+   "chapters": "1",
+   "caption": "Genesis 1 · Creation"
+  },
+  {
+   "t": 2.2,
+   "book": "Revelation",
+   "chapters": "2-3",
+   "caption": "Revelation 2–3 · The seven letters"
+  },
+  {
+   "t": 3.7,
+   "book": "2 Kings",
+   "chapters": "2",
+   "caption": "2 Kings 2 · The Jordan divides"
+  },
+  {
+   "t": 5.9,
+   "book": "Daniel",
+   "chapters": "3",
+   "caption": "Daniel 3 · A fourth man in the fire"
+  },
+  {
+   "t": 7.4,
+   "book": "Judges",
+   "chapters": "13-16",
+   "caption": "Judges 15 · Samson's foxes"
+  },
+  {
+   "t": 9.6,
+   "book": "Revelation",
+   "chapters": "13",
+   "caption": "Revelation 13 · The dragon and the beast"
+  },
+  {
+   "t": 11.8,
+   "book": "Daniel",
+   "chapters": "4",
+   "caption": "Daniel 4 · Nebuchadnezzar's Babylon"
+  },
+  {
+   "t": 14.0,
+   "book": "2 Kings",
+   "chapters": "2",
+   "caption": "2 Kings 2 · The chariot of fire"
+  },
+  {
+   "t": 16.2,
+   "book": "Revelation",
+   "chapters": "7",
+   "caption": "Revelation 7 · Before the throne"
+  },
+  {
+   "t": 18.4,
+   "book": "Daniel",
+   "chapters": "2",
+   "caption": "Daniel 2 · The statue of gold"
+  },
+  {
+   "t": 20.3,
+   "book": "Revelation",
+   "chapters": "19",
+   "caption": "Revelation 19 · The King returns"
+  },
+  {
+   "t": 21.9,
+   "book": "Judges",
+   "chapters": "13-16",
+   "caption": "Judges 16 · The last stand"
+  },
+  {
+   "t": 23.9,
+   "book": "Revelation",
+   "chapters": "21-22",
+   "caption": "Revelation 21 · The new Jerusalem"
+  },
+  {
+   "t": 25.9,
+   "book": "2 Kings",
+   "chapters": "2",
+   "caption": "2 Kings 2 · Elijah taken up"
+  }
+ ]
+}

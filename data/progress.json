@@ -1,0 +1,390 @@
+{
+ "total_chapters": 1189,
+ "animated_chapters": 43,
+ "percent": 3.6,
+ "books": [
+  {
+   "book": "Genesis",
+   "chapters": 50,
+   "animated": [
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "book": "Exodus",
+   "chapters": 40,
+   "animated": []
+  },
+  {
+   "book": "Leviticus",
+   "chapters": 27,
+   "animated": []
+  },
+  {
+   "book": "Numbers",
+   "chapters": 36,
+   "animated": [
+    22
+   ]
+  },
+  {
+   "book": "Deuteronomy",
+   "chapters": 34,
+   "animated": []
+  },
+  {
+   "book": "Joshua",
+   "chapters": 24,
+   "animated": []
+  },
+  {
+   "book": "Judges",
+   "chapters": 21,
+   "animated": [
+    13,
+    14,
+    15,
+    16
+   ]
+  },
+  {
+   "book": "Ruth",
+   "chapters": 4,
+   "animated": []
+  },
+  {
+   "book": "1 Samuel",
+   "chapters": 31,
+   "animated": [
+    28
+   ]
+  },
+  {
+   "book": "2 Samuel",
+   "chapters": 24,
+   "animated": []
+  },
+  {
+   "book": "1 Kings",
+   "chapters": 22,
+   "animated": []
+  },
+  {
+   "book": "2 Kings",
+   "chapters": 25,
+   "animated": []
+  },
+  {
+   "book": "1 Chronicles",
+   "chapters": 29,
+   "animated": []
+  },
+  {
+   "book": "2 Chronicles",
+   "chapters": 36,
+   "animated": []
+  },
+  {
+   "book": "Ezra",
+   "chapters": 10,
+   "animated": []
+  },
+  {
+   "book": "Nehemiah",
+   "chapters": 13,
+   "animated": []
+  },
+  {
+   "book": "Esther",
+   "chapters": 10,
+   "animated": []
+  },
+  {
+   "book": "Job",
+   "chapters": 42,
+   "animated": []
+  },
+  {
+   "book": "Psalms",
+   "chapters": 150,
+   "animated": []
+  },
+  {
+   "book": "Proverbs",
+   "chapters": 31,
+   "animated": []
+  },
+  {
+   "book": "Ecclesiastes",
+   "chapters": 12,
+   "animated": []
+  },
+  {
+   "book": "Song of Songs",
+   "chapters": 8,
+   "animated": []
+  },
+  {
+   "book": "Isaiah",
+   "chapters": 66,
+   "animated": []
+  },
+  {
+   "book": "Jeremiah",
+   "chapters": 52,
+   "animated": []
+  },
+  {
+   "book": "Lamentations",
+   "chapters": 5,
+   "animated": []
+  },
+  {
+   "book": "Ezekiel",
+   "chapters": 48,
+   "animated": []
+  },
+  {
+   "book": "Daniel",
+   "chapters": 12,
+   "animated": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ]
+  },
+  {
+   "book": "Hosea",
+   "chapters": 14,
+   "animated": []
+  },
+  {
+   "book": "Joel",
+   "chapters": 3,
+   "animated": []
+  },
+  {
+   "book": "Amos",
+   "chapters": 9,
+   "animated": []
+  },
+  {
+   "book": "Obadiah",
+   "chapters": 1,
+   "animated": []
+  },
+  {
+   "book": "Jonah",
+   "chapters": 4,
+   "animated": [
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "book": "Micah",
+   "chapters": 7,
+   "animated": []
+  },
+  {
+   "book": "Nahum",
+   "chapters": 3,
+   "animated": []
+  },
+  {
+   "book": "Habakkuk",
+   "chapters": 3,
+   "animated": []
+  },
+  {
+   "book": "Zephaniah",
+   "chapters": 3,
+   "animated": []
+  },
+  {
+   "book": "Haggai",
+   "chapters": 2,
+   "animated": []
+  },
+  {
+   "book": "Zechariah",
+   "chapters": 14,
+   "animated": []
+  },
+  {
+   "book": "Malachi",
+   "chapters": 4,
+   "animated": []
+  },
+  {
+   "book": "Matthew",
+   "chapters": 28,
+   "animated": []
+  },
+  {
+   "book": "Mark",
+   "chapters": 16,
+   "animated": []
+  },
+  {
+   "book": "Luke",
+   "chapters": 24,
+   "animated": []
+  },
+  {
+   "book": "John",
+   "chapters": 21,
+   "animated": [
+    11
+   ]
+  },
+  {
+   "book": "Acts",
+   "chapters": 28,
+   "animated": [
+    9
+   ]
+  },
+  {
+   "book": "Romans",
+   "chapters": 16,
+   "animated": []
+  },
+  {
+   "book": "1 Corinthians",
+   "chapters": 16,
+   "animated": []
+  },
+  {
+   "book": "2 Corinthians",
+   "chapters": 13,
+   "animated": []
+  },
+  {
+   "book": "Galatians",
+   "chapters": 6,
+   "animated": []
+  },
+  {
+   "book": "Ephesians",
+   "chapters": 6,
+   "animated": []
+  },
+  {
+   "book": "Philippians",
+   "chapters": 4,
+   "animated": []
+  },
+  {
+   "book": "Colossians",
+   "chapters": 4,
+   "animated": []
+  },
+  {
+   "book": "1 Thessalonians",
+   "chapters": 5,
+   "animated": []
+  },
+  {
+   "book": "2 Thessalonians",
+   "chapters": 3,
+   "animated": []
+  },
+  {
+   "book": "1 Timothy",
+   "chapters": 6,
+   "animated": []
+  },
+  {
+   "book": "2 Timothy",
+   "chapters": 4,
+   "animated": []
+  },
+  {
+   "book": "Titus",
+   "chapters": 3,
+   "animated": []
+  },
+  {
+   "book": "Philemon",
+   "chapters": 1,
+   "animated": []
+  },
+  {
+   "book": "Hebrews",
+   "chapters": 13,
+   "animated": []
+  },
+  {
+   "book": "James",
+   "chapters": 5,
+   "animated": []
+  },
+  {
+   "book": "1 Peter",
+   "chapters": 5,
+   "animated": []
+  },
+  {
+   "book": "2 Peter",
+   "chapters": 3,
+   "animated": []
+  },
+  {
+   "book": "1 John",
+   "chapters": 5,
+   "animated": []
+  },
+  {
+   "book": "2 John",
+   "chapters": 1,
+   "animated": []
+  },
+  {
+   "book": "3 John",
+   "chapters": 1,
+   "animated": []
+  },
+  {
+   "book": "Jude",
+   "chapters": 1,
+   "animated": []
+  },
+  {
+   "book": "Revelation",
+   "chapters": 22,
+   "animated": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22
+   ]
+  }
+ ],
+ "generated": "2026-10-08T06:16:23+08:00"
+}
