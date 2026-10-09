@@ -1,89 +1,112 @@
 {
- "duration": 28.39,
+ "duration": 32.42,
+ "files_mb": {
+  "hero-reel-1080-av1.mp4": 10.2,
+  "hero-reel-1080.mp4": 17.8,
+  "hero-reel-720.mp4": 7.0
+ },
  "clips": [
   {
    "t": 0.0,
+   "book": "Revelation",
+   "chapters": "4-5",
+   "caption": "Revelation 4 · The throne in heaven"
+  },
+  {
+   "t": 2.0,
+   "book": "Revelation",
+   "chapters": "13",
+   "caption": "Revelation 13 · The beast from the sea"
+  },
+  {
+   "t": 4.0,
+   "book": "Revelation",
+   "chapters": "4-5",
+   "caption": "Revelation 4 · The four living creatures"
+  },
+  {
+   "t": 6.0,
+   "book": "Revelation",
+   "chapters": "12",
+   "caption": "Revelation 12 · War in heaven"
+  },
+  {
+   "t": 8.0,
    "book": "Genesis",
    "chapters": "1",
    "caption": "Genesis 1 · Creation"
   },
   {
-   "t": 2.2,
+   "t": 10.0,
    "book": "Revelation",
-   "chapters": "2-3",
-   "caption": "Revelation 2–3 · The seven letters"
+   "chapters": "8-9",
+   "caption": "Revelation 8 · The seven trumpets"
   },
   {
-   "t": 3.7,
-   "book": "2 Kings",
-   "chapters": "2",
-   "caption": "2 Kings 2 · The Jordan divides"
+   "t": 12.0,
+   "book": "Revelation",
+   "chapters": "20",
+   "caption": "Revelation 20 · The dragon bound"
   },
   {
-   "t": 5.9,
-   "book": "Daniel",
-   "chapters": "3",
-   "caption": "Daniel 3 · A fourth man in the fire"
+   "t": 13.22,
+   "book": "Acts",
+   "chapters": "9",
+   "caption": "Acts 9 · A light from heaven"
   },
   {
-   "t": 7.4,
-   "book": "Judges",
-   "chapters": "13-16",
-   "caption": "Judges 15 · Samson's foxes"
+   "t": 15.22,
+   "book": "Revelation",
+   "chapters": "4-5",
+   "caption": "Revelation 5 · The Lamb"
   },
   {
-   "t": 9.6,
+   "t": 17.22,
    "book": "Revelation",
    "chapters": "13",
-   "caption": "Revelation 13 · The dragon and the beast"
+   "caption": "Revelation 13 · The dragon's power"
   },
   {
-   "t": 11.8,
-   "book": "Daniel",
-   "chapters": "4",
-   "caption": "Daniel 4 · Nebuchadnezzar's Babylon"
-  },
-  {
-   "t": 14.0,
-   "book": "2 Kings",
-   "chapters": "2",
-   "caption": "2 Kings 2 · The chariot of fire"
-  },
-  {
-   "t": 16.2,
+   "t": 19.22,
    "book": "Revelation",
-   "chapters": "7",
-   "caption": "Revelation 7 · Before the throne"
+   "chapters": "12",
+   "caption": "Revelation 12 · The woman given wings"
   },
   {
-   "t": 18.4,
-   "book": "Daniel",
-   "chapters": "2",
-   "caption": "Daniel 2 · The statue of gold"
+   "t": 20.52,
+   "book": "Revelation",
+   "chapters": "8-9",
+   "caption": "Revelation 9 · The fiery horsemen"
   },
   {
-   "t": 20.3,
+   "t": 22.52,
+   "book": "Revelation",
+   "chapters": "19",
+   "caption": "Revelation 19 · The armies of heaven"
+  },
+  {
+   "t": 24.52,
+   "book": "Revelation",
+   "chapters": "20",
+   "caption": "Revelation 20 · The great white throne"
+  },
+  {
+   "t": 26.02,
+   "book": "Acts",
+   "chapters": "9",
+   "caption": "Acts 9 · Scales fall from his eyes"
+  },
+  {
+   "t": 28.02,
+   "book": "Revelation",
+   "chapters": "21-22",
+   "caption": "Revelation 22 · The river of life"
+  },
+  {
+   "t": 30.02,
    "book": "Revelation",
    "chapters": "19",
    "caption": "Revelation 19 · The King returns"
-  },
-  {
-   "t": 21.9,
-   "book": "Judges",
-   "chapters": "13-16",
-   "caption": "Judges 16 · The last stand"
-  },
-  {
-   "t": 23.9,
-   "book": "Revelation",
-   "chapters": "21-22",
-   "caption": "Revelation 21 · The new Jerusalem"
-  },
-  {
-   "t": 25.9,
-   "book": "2 Kings",
-   "chapters": "2",
-   "caption": "2 Kings 2 · Elijah taken up"
   }
  ]
 }

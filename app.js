@@ -5,7 +5,7 @@
 
   // Links that wait on an account or inbox. Empty = shown as "coming soon" and not clickable.
   const LINKS = {
-    kofi: "",   // the Ko-fi page, e.g. https://ko-fi.com/<name>
+    kofi: "https://ko-fi.com/gospelgenga",
     email: "gospelgenga@gmail.com",  // Contact buttons (mailto)
   };
 
@@ -64,7 +64,13 @@
     let marks = [];
     fresh("assets/hero-reel.json").then(j => { marks = j.clips || []; }).catch(() => {});
     const now = $("[data-now]"), text = $("[data-now-text]");
-    const start = () => { if (!video.getAttribute("src")) video.src = video.dataset.reel; video.play().catch(() => {}); };
+    // 1080p AV1 where the browser plays it (smallest file for the quality), else 1080p H.264, or 720p on phones
+    const pick = () => {
+      const d = video.dataset;
+      if (video.canPlayType('video/mp4; codecs="av01.0.08M.08"') === "probably") return d.reelAv1;
+      return innerWidth < 760 ? d.reelSd : d.reelHd;
+    };
+    const start = () => { if (!video.getAttribute("src")) video.src = pick(); video.play().catch(() => {}); };
     const icon = playing => {
       btn.innerHTML = playing ? '<i class="ic-pause"></i>' : `<i class="ic-play"></i>${video.classList.contains("on") ? "" : "<span>Play highlights</span>"}`;
       btn.classList.toggle("labelled", !playing && !video.classList.contains("on"));

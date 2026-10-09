@@ -19,7 +19,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=4">
+<link rel="stylesheet" href="styles.css?v=5">
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@graph": [
   {"@type": "Organization", "@id": "https://gospelgenga.com/#org", "name": "GospelGenga", "url": "https://gospelgenga.com/",
@@ -44,8 +44,9 @@
 </header>
 
 <section class="hero">
-  <img class="hero-img" src="assets/hero.jpg" alt="">
-  <video class="hero-img hero-video" muted loop playsinline preload="none" poster="assets/hero.jpg" aria-hidden="true" data-reel="assets/hero-reel.mp4"></video>
+  <img class="hero-img" src="assets/hero-poster.jpg" alt="" fetchpriority="high">
+  <video class="hero-img hero-video" muted loop playsinline preload="none" poster="assets/hero-poster.jpg" aria-hidden="true"
+    data-reel-av1="assets/hero-reel-1080-av1.mp4" data-reel-hd="assets/hero-reel-1080.mp4" data-reel-sd="assets/hero-reel-720.mp4"></video>
   <div class="hero-shade"></div>
   <div class="wrap hero-inner">
     <p class="eyebrow">Christian anime · Faithful to Scripture</p>
@@ -167,33 +168,50 @@
   <img src="assets/support.jpg" alt="" loading="lazy">
   <div class="support-shade"></div>
   <div class="wrap support-inner">
-    <p class="eyebrow">Support</p>
-    <h2>Help us animate<br>the entire Bible.</h2>
-    <p class="lead">GospelGenga is independent and funded by viewers. Every gift goes into the next chapter.</p>
-    <div class="give">
-      <div class="give-card kofi">
-        <span class="give-logo" aria-hidden="true"><svg viewBox="1.2 1.6 21 21"><path fill="#fff" d="M3 6.5h13.5v6.8a4.7 4.7 0 0 1-4.7 4.7H7.7A4.7 4.7 0 0 1 3 13.3z"/><path fill="none" stroke="#fff" stroke-width="2.2" d="M16.5 8.6h1.6a2.9 2.9 0 0 1 0 5.8h-1.6"/><path fill="#ff5e5b" d="M9.8 15.4s-3.3-2-3.3-4.2a1.75 1.75 0 0 1 3.3-.8 1.75 1.75 0 0 1 3.3.8c0 2.2-3.3 4.2-3.3 4.2z"/></svg></span>
-        <span class="give-via">Ko-fi</span>
-        <h3>Give once</h3>
-        <p>A one-time gift of any size. No account and no subscription needed.</p>
-        <a class="btn brand" data-link="kofi" target="_blank" rel="noopener">Give on Ko-fi</a>
+    <div class="support-head">
+      <p class="eyebrow">Support</p>
+      <h2>Help us animate<br>the entire Bible.</h2>
+      <p class="lead">GospelGenga is independent and funded by viewers. Your support pays for the animation, voices and music behind each new chapter.</p>
+    </div>
+    <div class="support-panel">
+      <div class="give-once kofi">
+        <div class="give-title">
+          <span class="give-logo" aria-hidden="true"><svg viewBox="1.2 1.6 21 21"><path fill="#fff" d="M3 6.5h13.5v6.8a4.7 4.7 0 0 1-4.7 4.7H7.7A4.7 4.7 0 0 1 3 13.3z"/><path fill="none" stroke="#fff" stroke-width="2.2" d="M16.5 8.6h1.6a2.9 2.9 0 0 1 0 5.8h-1.6"/><path fill="#ff5e5b" d="M9.8 15.4s-3.3-2-3.3-4.2a1.75 1.75 0 0 1 3.3-.8 1.75 1.75 0 0 1 3.3.8c0 2.2-3.3 4.2-3.3 4.2z"/></svg></span>
+          <div><span class="give-via">Ko-fi</span><h3>Give once</h3></div>
+          <span class="give-tag">Any amount · no account needed</span>
+        </div>
+        <div class="kofi-embed">
+          <iframe id="kofiframe" src="https://ko-fi.com/gospelgenga/?hidefeed=true&amp;widget=true&amp;embed=true&amp;preview=true" title="Give to GospelGenga on Ko-fi" loading="lazy" height="712"></iframe>
+        </div>
+        <p class="small muted kofi-alt">Prefer Ko-fi's own page? <a data-link="kofi" target="_blank" rel="noopener">ko-fi.com/gospelgenga</a></p>
       </div>
-      <div class="give-card patreon">
-        <span class="give-logo" aria-hidden="true"><svg viewBox="-3.5 -3.5 31 31"><path fill="#fff" d="M22.957 7.21c-.004-3.064-2.391-5.576-5.191-6.482-3.478-1.125-8.064-.962-11.384.604C2.357 3.231 1.093 7.391 1.046 11.54c-.039 3.411.302 12.396 5.369 12.46 3.765.047 4.326-4.804 6.068-7.141 1.24-1.662 2.836-2.132 4.801-2.618 3.376-.836 5.678-3.501 5.673-7.031Z"/></svg></span>
-        <span class="give-via">Patreon</span>
-        <h3>Become a patron</h3>
-        <p>Monthly support on Patreon. Patrons at our top tier, the Paladins, are thanked by name at the end of every episode.</p>
-        <a class="btn brand" href="https://www.patreon.com/gospelgenga" target="_blank" rel="noopener">Join on Patreon</a>
-      </div>
-      <div class="give-card youtube">
-        <span class="give-logo" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="#fff" d="M9.6 7.6v8.8L17 12z"/></svg></span>
-        <span class="give-via">YouTube</span>
-        <h3>Join on YouTube</h3>
-        <p>Support from inside YouTube with a channel membership.</p>
-        <a class="btn brand" href="https://www.youtube.com/@GospelGenga/join" target="_blank" rel="noopener">Become a member</a>
+      <div class="give-more">
+        <p class="give-more-head">Or support every month</p>
+        <div class="give-card patreon">
+          <span class="give-logo" aria-hidden="true"><svg viewBox="-3.5 -3.5 31 31"><path fill="#fff" d="M22.957 7.21c-.004-3.064-2.391-5.576-5.191-6.482-3.478-1.125-8.064-.962-11.384.604C2.357 3.231 1.093 7.391 1.046 11.54c-.039 3.411.302 12.396 5.369 12.46 3.765.047 4.326-4.804 6.068-7.141 1.24-1.662 2.836-2.132 4.801-2.618 3.376-.836 5.678-3.501 5.673-7.031Z"/></svg></span>
+          <div class="give-body">
+            <span class="give-via">Patreon</span>
+            <h3>Become a patron</h3>
+            <p>Monthly support on Patreon. Patrons at our top tier, the Paladins, are thanked by name at the end of every episode.</p>
+            <a class="btn brand" href="https://www.patreon.com/gospelgenga" target="_blank" rel="noopener">Join on Patreon</a>
+          </div>
+        </div>
+        <div class="give-card youtube">
+          <span class="give-logo" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="#fff" d="M9.6 7.6v8.8L17 12z"/></svg></span>
+          <div class="give-body">
+            <span class="give-via">YouTube</span>
+            <h3>Join on YouTube</h3>
+            <p>Support from inside YouTube with a channel membership.</p>
+            <a class="btn brand" href="https://www.youtube.com/@GospelGenga/join" target="_blank" rel="noopener">Become a member</a>
+          </div>
+        </div>
+        <div class="give-free">
+          <h3>Can't give right now?</h3>
+          <p>Watching, subscribing and sharing an episode with a friend helps just as much.</p>
+          <a class="text-link" href="https://www.youtube.com/@GospelGenga?sub_confirmation=1" target="_blank" rel="noopener">Subscribe on YouTube</a>
+        </div>
       </div>
     </div>
-    <p class="small free">Can't give? Watching, subscribing and sharing an episode helps just as much.</p>
   </div>
 </section>
 
@@ -281,6 +299,6 @@
   </div>
 </footer>
 
-<script src="app.js?v=6" defer></script>
+<script src="app.js?v=8" defer></script>
 </body>
 </html>

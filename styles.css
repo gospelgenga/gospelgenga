@@ -202,20 +202,38 @@ button.book:focus-visible, .ch:focus-visible, .bp-row:focus-visible { outline: 2
 .support > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .support-shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(0, 0, 0, .9), rgba(0, 0, 0, .45)); }
 .support-inner { position: relative; }
-.give { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 2.6rem; }
-.give-card { --brand: #fff; --brand-btn: #fff; display: flex; flex-direction: column; align-items: flex-start; padding: 1.6rem; border-radius: 6px; background: rgba(255, 255, 255, .06); border: 1px solid rgba(255, 255, 255, .18); border-top: 3px solid var(--brand); backdrop-filter: blur(6px); }
-.give-card.kofi { --brand: #29abe0; --brand-btn: #1a8fc5; }
-.give-card.patreon { --brand: #f96854; --brand-btn: #e2533e; }
-.give-card.youtube { --brand: #ff0033; --brand-btn: #e0002d; }
-.give-logo { width: 48px; height: 48px; border-radius: 12px; background: var(--brand); display: grid; place-items: center; margin-bottom: 1.1rem; box-shadow: 0 6px 18px -6px var(--brand); }
-.give-logo svg { width: 30px; height: 30px; }
-.give-via { font: 600 .7rem/1 var(--sans); letter-spacing: .22em; text-transform: uppercase; color: var(--brand); margin-bottom: .55rem; }
+.support-head .lead { max-width: 52ch; }
+.support-panel {
+  display: grid; grid-template-columns: 1.15fr 1fr; gap: clamp(1.4rem, 3vw, 2.4rem); margin-top: 2.8rem;
+  padding: clamp(1.2rem, 3vw, 2.2rem); border-radius: 16px; background: #fff; color: var(--ink);
+  box-shadow: 0 50px 100px -40px rgba(0, 0, 0, .85), 0 0 0 1px rgba(255, 255, 255, .12), 0 0 0 10px rgba(255, 255, 255, .05);
+}
+.kofi { --brand: #29abe0; --brand-btn: #1a8fc5; }
+.patreon { --brand: #f96854; --brand-btn: #e2533e; }
+.youtube { --brand: #ff0033; --brand-btn: #e0002d; }
+.give-title { display: flex; align-items: center; gap: .9rem; margin-bottom: 1rem; flex-wrap: wrap; }
+.give-title h3 { margin: 0; }
+.give-tag { margin-left: auto; font-size: .8rem; color: var(--muted); }
+.give-logo { flex: none; width: 46px; height: 46px; border-radius: 12px; background: var(--brand); display: grid; place-items: center; box-shadow: 0 8px 18px -8px var(--brand); }
+.give-logo svg { width: 28px; height: 28px; }
+.give-via { display: block; font: 600 .68rem/1 var(--sans); letter-spacing: .22em; text-transform: uppercase; color: var(--brand-btn); margin-bottom: .4rem; }
+.kofi-embed { border-radius: 12px; overflow: hidden; background: #f9f9f9; border: 1px solid var(--line); border-top: 3px solid var(--brand); }
+.kofi-embed iframe { display: block; width: 100%; height: 712px; border: 0; background: #f9f9f9; }
+.kofi-alt { margin: .8rem 0 0; }
+.kofi-alt a { color: var(--brand-btn); text-underline-offset: 3px; }
+.give-more { display: flex; flex-direction: column; gap: 1rem; }
+.give-more-head { margin: 0 0 .2rem; font: 600 .72rem/1 var(--sans); letter-spacing: .22em; text-transform: uppercase; color: var(--muted); padding-top: .9rem; }
+.give-card { display: flex; gap: 1rem; align-items: flex-start; padding: 1.3rem; border-radius: 12px; background: var(--paper-2); border: 1px solid var(--line); border-left: 4px solid var(--brand); transition: transform .15s, box-shadow .15s; }
+.give-card:hover { transform: translateY(-2px); box-shadow: 0 14px 30px -18px rgba(0, 0, 0, .35); }
+.give-card h3 { margin-bottom: .45rem; font-size: 1.55rem; }
+.give-card p { color: var(--ink-2); font-size: .94rem; margin-bottom: 1rem; }
 .btn.brand { background: var(--brand-btn); color: #fff; }
 .btn.brand:hover { filter: brightness(1.1); }
-.give-card .btn.pending { color: #fff; border-color: var(--brand); filter: none; }
-.give-card h3 { color: #fff; margin-bottom: .6rem; }
-.give-card p { color: rgba(255, 255, 255, .76); font-size: .95rem; flex: 1; margin-bottom: 1.4rem; }
-.free { margin: 1.8rem 0 0; color: rgba(255, 255, 255, .62); }
+.give-free { margin-top: auto; padding: 1.2rem 1.3rem; border-radius: 12px; border: 1px dashed var(--line); }
+.give-free h3 { font-size: 1.35rem; margin-bottom: .35rem; }
+.give-free p { color: var(--ink-2); font-size: .92rem; margin-bottom: .6rem; }
+.text-link { font: 600 .9rem/1 var(--sans); text-underline-offset: 3px; }
+.text-link::after { content: " \2192"; }
 .btn.pending { opacity: .6; cursor: default; border-style: dashed; border-color: currentColor; background: transparent; color: inherit; font-weight: 500; }
 .btn.pending:hover { transform: none; background: transparent; }
 .btn.outline { border-color: var(--ink); color: var(--ink); }
@@ -269,7 +287,8 @@ button.book:focus-visible, .ch:focus-visible, .bp-row:focus-visible { outline: 2
   .links { display: none; }
   .nav .btn { margin-left: auto; }
   .mission, .shop, .partners, .faq { grid-template-columns: 1fr; }
-  .paths, .give { grid-template-columns: 1fr; }
+  .paths, .support-panel { grid-template-columns: 1fr; }
+  .give-tag { margin-left: 0; width: 100%; }
   .reel-ui { top: 4.6rem; bottom: auto; }
   .now-playing { display: none; }
   .flock-inner { grid-template-columns: 1fr; }
@@ -289,5 +308,7 @@ button.book:focus-visible, .ch:focus-visible, .bp-row:focus-visible { outline: 2
   .bp-row img { width: 104px; }
   .kit { padding: 1.4rem; }
   .kit dd { font-size: 2rem; }
+  .give-card { flex-direction: column; }
+  .kofi-embed iframe { height: 760px; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } html { scroll-behavior: auto; } }
