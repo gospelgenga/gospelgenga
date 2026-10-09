@@ -1,0 +1,39 @@
+{
+ "scenes": [
+  {
+   "n": 1,
+   "book": "Revelation",
+   "chapters": "4-5",
+   "cut": "Revelation 5",
+   "caption": "The Lamb with seven eyes"
+  },
+  {
+   "n": 2,
+   "book": "Daniel",
+   "chapters": "3",
+   "cut": "Daniel 3",
+   "caption": "A fourth man in the fire"
+  },
+  {
+   "n": 3,
+   "book": "2 Kings",
+   "chapters": "2",
+   "cut": "2 Kings 2",
+   "caption": "The chariot of fire"
+  },
+  {
+   "n": 4,
+   "book": "Genesis",
+   "chapters": "5",
+   "cut": "Genesis 5",
+   "caption": "Adam"
+  },
+  {
+   "n": 5,
+   "book": "Revelation",
+   "chapters": "19",
+   "cut": "Revelation 19",
+   "caption": "The King returns"
+  }
+ ]
+}

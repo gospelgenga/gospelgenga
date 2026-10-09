@@ -18,13 +18,13 @@
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=3">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=4">
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@graph": [
   {"@type": "Organization", "@id": "https://gospelgenga.com/#org", "name": "GospelGenga", "url": "https://gospelgenga.com/",
    "logo": "https://gospelgenga.com/assets/logo-512.png",
-   "sameAs": ["https://www.youtube.com/@GospelGenga", "https://www.patreon.com/gospelgenga"]},
+   "sameAs": ["https://www.youtube.com/@GospelGenga", "https://www.instagram.com/gospelgenga/", "https://www.patreon.com/gospelgenga"]},
   {"@type": "WebSite", "name": "GospelGenga", "url": "https://gospelgenga.com/", "publisher": {"@id": "https://gospelgenga.com/#org"}}
 ]}
 </script>
@@ -71,18 +71,33 @@
 <section class="section" id="mission">
   <div class="wrap mission">
     <div>
-      <p class="eyebrow dark">The mission</p>
+      <p class="eyebrow dark">The mission <span class="jp" lang="ja">原画</span></p>
       <h2>Every chapter<br>of the Bible.</h2>
-      <p>The Bible has 1,189 chapters, and we are animating every one of them, one faithful episode at a time.</p>
-      <p>Scripture is the source of truth, and nothing replaces reading it for yourself. Our episodes are a companion to the text: they show the places, the people and the history behind each chapter, so you can return to the page with more context than before.</p>
-      <p>We animate with the help of AI. It is a tool in our hands, not the author: every episode is built from the Berean Standard Bible and checked against it. That tool lets a small, independent studio make what once cost large studios millions, so the whole Bible can be animated, not only its best-known stories.</p>
+      <p class="mission-lead">The Bible has 1,189 chapters, and we are animating every one of them, one faithful episode at a time.</p>
+      <p>Our name comes from anime itself. In a Japanese studio, <em>genga</em> (原画) are the key drawings: the frames an animator draws first, holding the moments a scene turns on. That is how we read Scripture. We find the key moments of each chapter and draw them out in anime, a medium made for scale and feeling, for prophets' visions, the courts of heaven and a fourth man walking in the fire.</p>
+      <p>Scripture is the source of truth, and nothing replaces reading it for yourself. The episodes are a companion to the text: they show the places, the people and the history behind each chapter, so you return to the page with more context than before.</p>
+      <p>AI is a tool in our hands, not the author. Every episode is built from the Berean Standard Bible and checked against it, and the tool lets a small, independent studio make what once cost large studios millions, so the whole Bible can be animated, not only its best-known stories.</p>
       <div class="tracker">
         <div class="tracker-top"><span class="big" data-stat="chapters">43</span><span class="of">of <b data-stat="total">1,189</b> chapters animated</span></div>
         <div class="bar"><i data-bar></i></div>
         <p class="small muted" data-updated>Updated after every new episode.</p>
       </div>
     </div>
-    <figure class="mission-img"><img src="assets/mission.jpg" alt="Adam, from the Genesis series" loading="lazy"></figure>
+    <figure class="genga" data-genga>
+      <div class="sheet">
+        <div class="sheet-head"><span class="cut" data-genga-cut>CUT 01</span><span class="peg" aria-hidden="true"><i></i><i></i><i></i></span><span class="jp" lang="ja">原画</span></div>
+        <div class="frame">
+          <img class="g-color" src="assets/genga/1-color.jpg" alt="" loading="lazy" width="1280" height="720">
+          <img class="g-sketch" src="assets/genga/1-sketch.png" alt="" loading="lazy" width="1280" height="720">
+        </div>
+        <div class="sheet-notes">
+          <a class="g-ref" data-genga-link target="_blank" rel="noopener"><b data-genga-book>Revelation 5</b> <span data-genga-cap>The Lamb with seven eyes</span></a>
+          <span class="g-step" data-genga-step>key drawing</span>
+        </div>
+        <div class="timing" aria-hidden="true"><span>A1</span><span>A2</span><span>A3</span><span>B1</span><span>B2</span><span>B3</span></div>
+      </div>
+      <figcaption class="small muted"><b>Genga (原画)</b>: an anime's key drawings. Each scene is shown as a pencil key drawing, then as the finished frame. The sketches are an homage drawn from our own frames.</figcaption>
+    </figure>
   </div>
   <div class="wrap">
     <p class="books-hint small muted">Select a book to see its chapters and watch them.</p>
@@ -104,14 +119,14 @@
         <p>Genesis, chapter by chapter, starting with Creation.</p><span class="path-go">Watch Genesis 1</span></a>
       <a class="path" href="#movies">
         <span class="path-n">02</span><h3>A whole book in one sitting</h3>
-        <p>The Book of Revelation as full-length movies.</p><span class="path-go">See the movies</span></a>
+        <p>The Book of Revelation, start to finish, as a feature-length movie.</p><span class="path-go">See the movie</span></a>
       <a class="path" data-path="Daniel|1" target="_blank" rel="noopener">
         <span class="path-n">03</span><h3>The current series</h3>
         <p>Daniel in Babylon: the furnace, the writing on the wall, the visions.</p><span class="path-go">Watch Daniel 1</span></a>
     </div>
 
     <h2 id="movies" class="mt">Full movies</h2>
-    <p class="muted">Whole books in one sitting. Grab a coffee.</p>
+    <p class="muted" data-movies-note>A whole book in one sitting. Grab a coffee.</p>
     <div class="grid movies" data-movies></div>
 
     <div class="row-head">
@@ -126,6 +141,25 @@
     </div>
     <div class="grid episodes" data-episodes></div>
     <p class="center"><a class="btn dark" href="https://www.youtube.com/@GospelGenga/videos" target="_blank" rel="noopener">See every video on YouTube</a></p>
+  </div>
+</section>
+
+<section class="section flock" id="flock">
+  <div class="wrap flock-inner">
+    <div class="flock-art">
+      <figure class="polaroid back"><img src="assets/flock/flock-30k.webp" alt="Our lamb mascot in sunglasses celebrating 30,000 subscribers with a stadium full of sheep" loading="lazy" width="960" height="960"></figure>
+      <figure class="polaroid front"><img src="assets/flock/director-lamb.webp" alt="Our lamb mascot in a beret directing a scene through a megaphone" loading="lazy" width="960" height="960"></figure>
+    </div>
+    <div>
+      <p class="eyebrow dark">The flock</p>
+      <h2>Meet the director.</h2>
+      <p>Behind every episode is a small lamb in a beret with a megaphone and a script. Our mascot runs the set on our YouTube community posts and on Instagram, and the flock is you.</p>
+      <div class="flock-count"><span class="big" data-stat="subs">32.9K</span><span class="of">sheep in the flock, and counting</span></div>
+      <div class="cta">
+        <a class="btn dark" href="https://www.youtube.com/@GospelGenga?sub_confirmation=1" target="_blank" rel="noopener">Join the flock on YouTube</a>
+        <a class="btn outline" href="https://www.instagram.com/gospelgenga/" target="_blank" rel="noopener">Follow on Instagram</a>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -237,6 +271,7 @@
     <a class="logo" href="#top">gospelgenga<i>.</i></a>
     <nav aria-label="Footer">
       <a href="https://www.youtube.com/@GospelGenga" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://www.instagram.com/gospelgenga/" target="_blank" rel="noopener">Instagram</a>
       <a href="https://www.patreon.com/gospelgenga" target="_blank" rel="noopener">Patreon</a>
       <a data-link="kofi" target="_blank" rel="noopener">Ko-fi</a>
       <a href="#partners">Partners</a>
@@ -246,6 +281,6 @@
   </div>
 </footer>
 
-<script src="app.js?v=5" defer></script>
+<script src="app.js?v=6" defer></script>
 </body>
 </html>

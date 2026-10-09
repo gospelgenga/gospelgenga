@@ -255,6 +255,62 @@
   fallback.forEach((_, el) => { el.textContent = "0"; });
   const fillBar = pct => share => { $("[data-bar]").style.width = `${share * Math.max(pct, 0.8)}%`; };
 
+  // ---- genga panel: each scene as a pencil key drawing, then coloured in, then the next cut ----
+  function genga() {
+    const fig = $("[data-genga]");
+    if (!fig || fig.dataset.on) return;
+    fig.dataset.on = "1";
+    const frame = $(".frame", fig), color = $(".g-color", fig), sketch = $(".g-sketch", fig);
+    const cut = $("[data-genga-cut]", fig), book = $("[data-genga-book]", fig), cap = $("[data-genga-cap]", fig);
+    const step = $("[data-genga-step]", fig), link = $("[data-genga-link]", fig), keys = $$(".timing span", fig);
+    const wait = ms => new Promise(r => setTimeout(r, ms));
+    const loaded = src => new Promise(r => { const im = new Image(); im.onload = im.onerror = () => r(); im.src = src; });
+    let scenes = [], i = 0, started = false;
+    const label = sc => {
+      cut.textContent = `CUT ${String(sc.n).padStart(2, "0")}`;
+      book.textContent = sc.cut;
+      cap.textContent = sc.caption;
+      const v = lookup(sc.book, sc.chapters);
+      if (v) link.href = v.url; else link.removeAttribute("href");
+    };
+    const mark = (k, text) => { step.textContent = text; keys.forEach((el, n) => el.classList.toggle("on", n === k)); };
+    async function run() {
+      for (;;) {
+        mark(0, "key drawing");
+        await wait(2200);
+        frame.classList.add("colored");
+        mark(2, "in colour");
+        await wait(1900);
+        frame.classList.add("final");
+        mark(5, "finished frame");
+        await wait(2800);
+        i = (i + 1) % scenes.length;
+        const next = scenes[i];
+        const src = n => [`assets/genga/${n}-color.jpg`, `assets/genga/${n}-sketch.png`];
+        await Promise.all(src(next.n).map(loaded));
+        frame.classList.add("out");
+        await wait(480);
+        frame.classList.add("reset");
+        frame.classList.remove("colored", "final");
+        [color.src, sketch.src] = src(next.n);
+        label(next);
+        void frame.offsetWidth; // apply the reset before transitions come back
+        frame.classList.remove("reset", "out");
+        await wait(500);
+      }
+    }
+    fresh("assets/genga/genga.json").then(j => {
+      scenes = j.scenes || [];
+      if (scenes.length < 2) return;
+      label(scenes[0]);
+      const go = () => { if (!started) { started = true; run(); } };
+      if ("IntersectionObserver" in window) {
+        const io2 = new IntersectionObserver(es => { if (es.some(e => e.isIntersecting)) { io2.disconnect(); go(); } }, { threshold: 0.3 });
+        io2.observe(fig);
+      } else go();
+    }).catch(() => {});
+  }
+
   reel();
 
   Promise.all([fresh("data/progress.json"), fresh("data/published.json")]).then(([prog, pub]) => {
@@ -269,7 +325,7 @@
     set("videos", vids.length, num(vids.length));
     set("views", views, compact(views));
     set("top", top, compact(top));
-    const nMovies = vids.filter(v => v.lane === "movie").length;
+    const nMovies = new Set(vids.filter(v => v.lane === "movie").map(v => v.book)).size; // Revelation's parts count as one movie
     set("movies", nMovies, num(nMovies));
     set("subs", parseShort(subs), subs);
     set("chapters", prog.animated_chapters, num(prog.animated_chapters));
@@ -284,6 +340,7 @@
       }
     }
     books(prog);
+    genga(); // after the video index exists, so its captions can link to the episodes
 
     $$("[data-path]").forEach(a => {
       const [book, ch] = a.dataset.path.split("|"), v = lookup(book, ch);
@@ -306,5 +363,6 @@
   }).catch(() => {
     // data didn't load: count up to the numbers written into the HTML instead
     fallback.forEach((text, el) => { if (!counters.has(el)) countTo(el, parseShort(text), text, el.closest(".tracker") ? fillBar(3.6) : null); });
+    genga();
   });
 })();
