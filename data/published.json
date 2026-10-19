@@ -2,7 +2,7 @@
  "snapshot": "2026-10-08 SGT, public YouTube watch-page metadata (uploadDate, viewCount, lengthSeconds) for every long-form video on @GospelGenga",
  "channel": {
   "handle": "@GospelGenga",
-  "subscribers_display": "33.2K",
+  "subscribers_display": "33.3K",
   "long_form_videos": 33
  },
  "videos": [
@@ -415,7 +415,21 @@
    "views_at_snapshot": 3052,
    "added_by": "GospelGenga Studio",
    "added_at": "2026-10-09T04:24:55+08:00"
+  },
+  {
+   "id": "daniel-06",
+   "youtube_id": "exfuh8uhb6M",
+   "url": "https://www.youtube.com/watch?v=exfuh8uhb6M",
+   "title": "HOW DANIEL SURVIVED THE NIGHT IN THE LIONS' DEN (Bible Anime)",
+   "lane": "main",
+   "book": "Daniel",
+   "chapters": "6",
+   "published_sgt": "2026-10-20 03:14",
+   "duration_s": 791,
+   "views_at_snapshot": 7,
+   "added_by": "GospelGenga Studio",
+   "added_at": "2026-10-20T03:17:09+08:00"
   }
  ],
- "stats_fetched_at": "2026-10-19T06:32:06+08:00"
+ "stats_fetched_at": "2026-10-20T03:17:17+08:00"
 }
