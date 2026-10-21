@@ -1,7 +1,7 @@
 {
  "total_chapters": 1189,
- "animated_chapters": 45,
- "percent": 3.8,
+ "animated_chapters": 46,
+ "percent": 3.9,
  "books": [
   {
    "book": "Genesis",
@@ -238,7 +238,9 @@
   {
    "book": "Luke",
    "chapters": 24,
-   "animated": []
+   "animated": [
+    15
+   ]
   },
   {
    "book": "John",
@@ -388,5 +390,5 @@
    ]
   }
  ],
- "generated": "2026-10-21T06:21:03+08:00"
+ "generated": "2026-10-22T04:00:23+08:00"
 }
