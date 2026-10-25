@@ -471,7 +471,21 @@
    "views_at_snapshot": 9661,
    "added_by": "GospelGenga Studio",
    "added_at": "2026-10-22T04:33:05+08:00"
+  },
+  {
+   "id": "daniel-movie-1",
+   "youtube_id": "2ONytAofoj4",
+   "url": "https://www.youtube.com/watch?v=2ONytAofoj4",
+   "title": "THE BOOK OF DANIEL: The King Who Tried to Kill Them | Bible Anime Movie",
+   "lane": "movie",
+   "book": "Daniel",
+   "chapters": "1-6",
+   "published_sgt": "2026-10-26 02:00",
+   "duration_s": 5063,
+   "views_at_snapshot": 40,
+   "added_by": "GospelGenga Studio",
+   "added_at": "2026-10-26T02:29:05+08:00"
   }
  ],
- "stats_fetched_at": "2026-10-25T06:31:00+08:00"
+ "stats_fetched_at": "2026-10-26T02:29:12+08:00"
 }
