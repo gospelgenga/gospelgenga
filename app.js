@@ -14,7 +14,22 @@
   const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const num = n => Number(n || 0).toLocaleString("en-US");
   const compact = n => n >= 1e6 ? `${(n / 1e6).toFixed(2).replace(/0$/, "")}M` : n >= 1e3 ? `${Math.round(n / 1e3)}K` : num(n);
-  const clean = t => String(t || "").replace(/\s*\(Bible Anime\)\s*$/i, "").replace(/\s*\|\s*(?:Full )?Bible Anime Movie\s*$/i, "");
+  const SMALL = new Set(["a", "an", "and", "as", "at", "but", "by", "for", "in", "of", "on", "or", "the", "to", "vs", "with"]);
+  // all-caps YouTube titles read badly in a list, so show them in title case ("THE BOOK OF DANIEL" -> "The Book of Daniel")
+  const titleCase = s => {
+    const letters = s.replace(/[^A-Za-z]/g, "");
+    if (!letters || letters !== letters.toUpperCase()) return s;
+    let prev = "";
+    return s.split(/(\s+)/).map(w => {
+      if (/^\s+$/.test(w)) return w;
+      const before = prev; prev = w;
+      if (/\d/.test(w) || w === "LORD") return w;
+      const low = w.toLowerCase();
+      if (before && !/[:.!?—]$/.test(before) && SMALL.has(low)) return low;
+      return low.replace(/^([^a-z]*)([a-z])/, (m, pre, c) => pre + c.toUpperCase());
+    }).join("");
+  };
+  const clean = t => String(t || "").replace(/\s*\(Bible Anime\)\s*$/i, "").replace(/\s*\|\s*(?:Full )?Bible Anime Movie\s*$/i, "").split(/(:\s+)/).map(titleCase).join("");
   const dur = s => { s = Math.round(s || 0); const h = Math.floor(s / 3600), m = Math.floor(s % 3600 / 60), x = s % 60; return h ? `${h}:${String(m).padStart(2, "0")}:${String(x).padStart(2, "0")}` : `${m}:${String(x).padStart(2, "0")}`; };
   const fresh = p => fetch(`${p}?t=${Date.now()}`, { cache: "no-store" }).then(r => { if (!r.ok) throw new Error(p); return r.json(); });
   const chapterList = s => String(s || "").split(",").flatMap(part => {
