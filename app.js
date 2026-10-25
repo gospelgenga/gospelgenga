@@ -14,7 +14,7 @@
   const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const num = n => Number(n || 0).toLocaleString("en-US");
   const compact = n => n >= 1e6 ? `${(n / 1e6).toFixed(2).replace(/0$/, "")}M` : n >= 1e3 ? `${Math.round(n / 1e3)}K` : num(n);
-  const clean = t => String(t || "").replace(/\s*\(Bible Anime\)\s*$/i, "").replace(/\s*\|\s*Bible Anime Movie\s*$/i, "");
+  const clean = t => String(t || "").replace(/\s*\(Bible Anime\)\s*$/i, "").replace(/\s*\|\s*(?:Full )?Bible Anime Movie\s*$/i, "");
   const dur = s => { s = Math.round(s || 0); const h = Math.floor(s / 3600), m = Math.floor(s % 3600 / 60), x = s % 60; return h ? `${h}:${String(m).padStart(2, "0")}:${String(x).padStart(2, "0")}` : `${m}:${String(x).padStart(2, "0")}`; };
   const fresh = p => fetch(`${p}?t=${Date.now()}`, { cache: "no-store" }).then(r => { if (!r.ok) throw new Error(p); return r.json(); });
   const chapterList = s => String(s || "").split(",").flatMap(part => {
@@ -23,6 +23,8 @@
     return Array.from({ length: (b || a) - a + 1 }, (_, i) => a + i);
   });
   const range = s => String(s || "").replace("-", "–");
+  // a "full" movie is a whole book in one video (its id or title says Full); the rest are parts of a book
+  const isFull = v => /full/i.test(v.id || "") || /\|\s*Full Bible Anime Movie/i.test(v.title || "");
   const saveData = !!(navigator.connection && navigator.connection.saveData);
   const quietMotion = matchMedia("(prefers-reduced-motion: reduce)").matches || saveData;
 
@@ -111,7 +113,7 @@
     return `<a class="card" href="${esc(v.url)}" target="_blank" rel="noopener">
       <div class="thumb"><img src="https://i.ytimg.com/vi/${id}/maxresdefault.jpg" alt="" loading="lazy" data-yt="${id}">${v.duration_s ? `<span class="dur">${dur(v.duration_s)}</span>` : ""}</div>
       <h4>${esc(clean(v.title))}</h4>
-      <span class="meta">${esc(v.book)} ${esc(range(v.chapters))}${date ? ` · ${esc(date)}` : ""}</span></a>`;
+      <span class="meta">${v._part ? `Part ${v._part} · ` : ""}${esc(v.book)} ${esc(range(v.chapters))}${date ? ` · ${esc(date)}` : ""}</span></a>`;
   }
 
   // YouTube answers a missing HD thumbnail with a tiny grey stand-in (not always an error), so check the size.
@@ -154,7 +156,8 @@
         <button class="bp-close" type="button" aria-label="Close ${esc(b.book)}">×</button></div>
       <div class="bp-chapters" aria-label="${esc(b.book)} chapters">${chips}</div>
       ${eps.length ? `<p class="bp-sub">Episodes</p><div class="bp-list">${eps.sort((x, y) => first(x) - first(y)).map(row).join("")}</div>` : ""}
-      ${movies.length ? `<p class="bp-sub">Full movies</p><div class="bp-list">${movies.sort((x, y) => first(x) - first(y)).map(row).join("")}</div>` : ""}`;
+      ${movies.filter(isFull).length ? `<p class="bp-sub">Full movie</p><div class="bp-list">${movies.filter(isFull).map(row).join("")}</div>` : ""}
+      ${movies.filter(v => !isFull(v)).length ? `<p class="bp-sub">Movie in parts</p><div class="bp-list">${movies.filter(v => !isFull(v)).sort((x, y) => first(x) - first(y)).map(row).join("")}</div>` : ""}`;
   }
 
   function closePanel() {
@@ -354,9 +357,21 @@
     });
 
     const byDate = (a, b) => String(b.published_sgt).localeCompare(String(a.published_sgt));
-    const movies = vids.filter(v => v.lane === "movie").sort((a, b) => String(a.published_sgt).localeCompare(String(b.published_sgt)));
-    $("[data-movies]").innerHTML = movies.map(card).join("");
-    fixThumbs($("[data-movies]"));
+    // Movies in two shelves (Xand 2026-10-26): whole books in one video, then books told in parts (story order)
+    const movies = vids.filter(v => v.lane === "movie"), firstCh = v => chapterList(v.chapters)[0] || 0;
+    const full = movies.filter(isFull).sort(byDate);
+    const parts = movies.filter(v => !isFull(v));
+    const partBooks = [...new Set(parts.slice().sort((a, b) => String(a.published_sgt).localeCompare(String(b.published_sgt))).map(v => v.book))];
+    const partList = partBooks.flatMap(book => parts.filter(v => v.book === book).sort((a, b) => firstCh(a) - firstCh(b)).map((v, i) => ({ ...v, _part: i + 1 })));
+    const shelf = (sel, list) => {
+      const grid = $(sel);
+      if (!grid) return;
+      grid.innerHTML = list.map(card).join("");
+      fixThumbs(grid);
+      $$(`[data-shelf="${grid.dataset.shelfName}"]`).forEach(el => { el.hidden = !list.length; });
+    };
+    shelf("[data-movies-full]", full);
+    shelf("[data-movies-parts]", partList);
     const eps = vids.filter(v => v.lane !== "movie").sort(byDate);
     const paint = f => {
       const list = f === "all" ? eps.slice(0, 9) : f === "standalone" ? eps.filter(v => v.lane === "standalone") : eps.filter(v => v.book === f);
