@@ -2,7 +2,7 @@
  "snapshot": "2026-10-08 SGT, public YouTube watch-page metadata (uploadDate, viewCount, lengthSeconds) for every long-form video on @GospelGenga",
  "channel": {
   "handle": "@GospelGenga",
-  "subscribers_display": "33.8K",
+  "subscribers_display": "33.9K",
   "long_form_videos": 33
  },
  "videos": [
@@ -485,7 +485,21 @@
    "views_at_snapshot": 3697,
    "added_by": "GospelGenga Studio",
    "added_at": "2026-10-26T02:29:05+08:00"
+  },
+  {
+   "id": "genesis-08-09",
+   "youtube_id": "OSD7D9J8gSg",
+   "url": "https://www.youtube.com/watch?v=OSD7D9J8gSg",
+   "title": "WHAT GOD SAID AFTER HE DESTROYED THE WORLD (Bible Anime)",
+   "lane": "genesis",
+   "book": "Genesis",
+   "chapters": "8-9",
+   "published_sgt": "2026-10-28 05:00",
+   "duration_s": 1354,
+   "views_at_snapshot": 4545,
+   "added_by": "GospelGenga Studio",
+   "added_at": "2026-10-30T07:20:34+08:00"
   }
  ],
- "stats_fetched_at": "2026-10-30T06:31:02+08:00"
+ "stats_fetched_at": "2026-10-30T07:20:42+08:00"
 }
