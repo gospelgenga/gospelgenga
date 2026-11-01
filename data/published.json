@@ -2,7 +2,7 @@
  "snapshot": "2026-10-08 SGT, public YouTube watch-page metadata (uploadDate, viewCount, lengthSeconds) for every long-form video on @GospelGenga",
  "channel": {
   "handle": "@GospelGenga",
-  "subscribers_display": "34K",
+  "subscribers_display": "34.1K",
   "long_form_videos": 33
  },
  "videos": [
@@ -16,7 +16,7 @@
    "chapters": "1-4",
    "published_sgt": "2025-10-09 02:30",
    "duration_s": 195,
-   "views_at_snapshot": 14840
+   "views_at_snapshot": 14858
   },
   {
    "id": "revelation-04-05",
@@ -28,7 +28,7 @@
    "chapters": "4-5",
    "published_sgt": "2025-12-10 09:28",
    "duration_s": 615,
-   "views_at_snapshot": 301709
+   "views_at_snapshot": 301759
   },
   {
    "id": "acts-09-saul",
@@ -40,7 +40,7 @@
    "chapters": "9",
    "published_sgt": "2025-12-29 23:51",
    "duration_s": 630,
-   "views_at_snapshot": 68316
+   "views_at_snapshot": 68356
   },
   {
    "id": "john-11-lazarus",
@@ -52,7 +52,7 @@
    "chapters": "11",
    "published_sgt": "2026-01-11 04:10",
    "duration_s": 613,
-   "views_at_snapshot": 16680
+   "views_at_snapshot": 16695
   },
   {
    "id": "revelation-12",
@@ -64,7 +64,7 @@
    "chapters": "12",
    "published_sgt": "2026-01-26 07:25",
    "duration_s": 644,
-   "views_at_snapshot": 89491
+   "views_at_snapshot": 89600
   },
   {
    "id": "revelation-13",
@@ -76,7 +76,7 @@
    "chapters": "13",
    "published_sgt": "2026-02-16 05:38",
    "duration_s": 693,
-   "views_at_snapshot": 202161
+   "views_at_snapshot": 202320
   },
   {
    "id": "revelation-01",
@@ -88,7 +88,7 @@
    "chapters": "1",
    "published_sgt": "2026-03-08 04:26",
    "duration_s": 508,
-   "views_at_snapshot": 37945
+   "views_at_snapshot": 38048
   },
   {
    "id": "revelation-02-03",
@@ -100,7 +100,7 @@
    "chapters": "2-3",
    "published_sgt": "2026-03-21 06:05",
    "duration_s": 1127,
-   "views_at_snapshot": 38420
+   "views_at_snapshot": 38497
   },
   {
    "id": "genesis-01",
@@ -112,7 +112,7 @@
    "chapters": "1",
    "published_sgt": "2026-03-24 22:48",
    "duration_s": 642,
-   "views_at_snapshot": 96139
+   "views_at_snapshot": 96250
   },
   {
    "id": "revelation-06",
@@ -124,7 +124,7 @@
    "chapters": "6",
    "published_sgt": "2026-03-28 17:39",
    "duration_s": 587,
-   "views_at_snapshot": 50361
+   "views_at_snapshot": 50403
   },
   {
    "id": "revelation-07",
@@ -136,7 +136,7 @@
    "chapters": "7",
    "published_sgt": "2026-04-07 03:45",
    "duration_s": 577,
-   "views_at_snapshot": 45132
+   "views_at_snapshot": 45171
   },
   {
    "id": "genesis-02",
@@ -148,7 +148,7 @@
    "chapters": "2",
    "published_sgt": "2026-04-09 06:16",
    "duration_s": 634,
-   "views_at_snapshot": 21827
+   "views_at_snapshot": 21869
   },
   {
    "id": "1samuel-28-endor",
@@ -160,7 +160,7 @@
    "chapters": "28",
    "published_sgt": "2026-04-14 06:44",
    "duration_s": 628,
-   "views_at_snapshot": 11784
+   "views_at_snapshot": 11797
   },
   {
    "id": "judges-13-16-samson",
@@ -172,7 +172,7 @@
    "chapters": "13-16",
    "published_sgt": "2026-04-24 05:00",
    "duration_s": 802,
-   "views_at_snapshot": 52373
+   "views_at_snapshot": 52411
   },
   {
    "id": "revelation-movie-1",
@@ -184,7 +184,7 @@
    "chapters": "1-7",
    "published_sgt": "2026-04-29 05:23",
    "duration_s": 3187,
-   "views_at_snapshot": 175228
+   "views_at_snapshot": 175360
   },
   {
    "id": "revelation-08-09",
@@ -196,7 +196,7 @@
    "chapters": "8-9",
    "published_sgt": "2026-05-02 08:41",
    "duration_s": 951,
-   "views_at_snapshot": 34645
+   "views_at_snapshot": 34709
   },
   {
    "id": "genesis-03",
@@ -208,7 +208,7 @@
    "chapters": "3",
    "published_sgt": "2026-05-06 08:00",
    "duration_s": 637,
-   "views_at_snapshot": 20860
+   "views_at_snapshot": 20890
   },
   {
    "id": "revelation-10-11",
@@ -220,7 +220,7 @@
    "chapters": "10-11",
    "published_sgt": "2026-05-09 05:00",
    "duration_s": 588,
-   "views_at_snapshot": 25309
+   "views_at_snapshot": 25350
   },
   {
    "id": "revelation-14",
@@ -232,7 +232,7 @@
    "chapters": "14",
    "published_sgt": "2026-05-16 05:30",
    "duration_s": 641,
-   "views_at_snapshot": 65403
+   "views_at_snapshot": 65464
   },
   {
    "id": "revelation-15-16",
@@ -244,7 +244,7 @@
    "chapters": "15-16",
    "published_sgt": "2026-05-24 05:00",
    "duration_s": 462,
-   "views_at_snapshot": 25284
+   "views_at_snapshot": 25321
   },
   {
    "id": "genesis-04",
@@ -256,7 +256,7 @@
    "chapters": "4",
    "published_sgt": "2026-05-28 03:00",
    "duration_s": 782,
-   "views_at_snapshot": 9740
+   "views_at_snapshot": 9766
   },
   {
    "id": "revelation-17-18",
@@ -268,7 +268,7 @@
    "chapters": "17-18",
    "published_sgt": "2026-06-08 07:00",
    "duration_s": 1157,
-   "views_at_snapshot": 37796
+   "views_at_snapshot": 37907
   },
   {
    "id": "revelation-movie-2",
@@ -280,7 +280,7 @@
    "chapters": "8-18",
    "published_sgt": "2026-06-13 10:13",
    "duration_s": 4826,
-   "views_at_snapshot": 287302
+   "views_at_snapshot": 289048
   },
   {
    "id": "revelation-19",
@@ -292,7 +292,7 @@
    "chapters": "19",
    "published_sgt": "2026-06-22 08:19",
    "duration_s": 790,
-   "views_at_snapshot": 76858
+   "views_at_snapshot": 76954
   },
   {
    "id": "revelation-20",
@@ -304,7 +304,7 @@
    "chapters": "20",
    "published_sgt": "2026-06-29 09:42",
    "duration_s": 825,
-   "views_at_snapshot": 124674
+   "views_at_snapshot": 125327
   },
   {
    "id": "revelation-21-22",
@@ -316,7 +316,7 @@
    "chapters": "21-22",
    "published_sgt": "2026-07-14 05:25",
    "duration_s": 1352,
-   "views_at_snapshot": 66953
+   "views_at_snapshot": 67109
   },
   {
    "id": "daniel-01",
@@ -328,7 +328,7 @@
    "chapters": "1",
    "published_sgt": "2026-07-21 10:03",
    "duration_s": 803,
-   "views_at_snapshot": 8320
+   "views_at_snapshot": 8359
   },
   {
    "id": "daniel-02",
@@ -340,7 +340,7 @@
    "chapters": "2",
    "published_sgt": "2026-08-03 06:08",
    "duration_s": 733,
-   "views_at_snapshot": 8111
+   "views_at_snapshot": 8121
   },
   {
    "id": "revelation-movie-3",
@@ -352,7 +352,7 @@
    "chapters": "19-22",
    "published_sgt": "2026-08-19 10:55",
    "duration_s": 3084,
-   "views_at_snapshot": 23172
+   "views_at_snapshot": 23344
   },
   {
    "id": "daniel-03",
@@ -364,7 +364,7 @@
    "chapters": "3",
    "published_sgt": "2026-09-03 13:44",
    "duration_s": 795,
-   "views_at_snapshot": 16750
+   "views_at_snapshot": 16787
   },
   {
    "id": "daniel-04",
@@ -376,7 +376,7 @@
    "chapters": "4",
    "published_sgt": "2026-09-17 03:48",
    "duration_s": 877,
-   "views_at_snapshot": 9734
+   "views_at_snapshot": 9771
   },
   {
    "id": "daniel-05",
@@ -388,7 +388,7 @@
    "chapters": "5",
    "published_sgt": "2026-10-05 06:01",
    "duration_s": 889,
-   "views_at_snapshot": 10313
+   "views_at_snapshot": 10336
   },
   {
    "id": "numbers-22-balaam",
@@ -400,7 +400,7 @@
    "chapters": "22",
    "published_sgt": "2026-10-07 04:00",
    "duration_s": 677,
-   "views_at_snapshot": 7266
+   "views_at_snapshot": 7291
   },
   {
    "id": "genesis-05",
@@ -412,7 +412,7 @@
    "chapters": "5",
    "published_sgt": "2026-10-09 04:00",
    "duration_s": 584,
-   "views_at_snapshot": 3571,
+   "views_at_snapshot": 3586,
    "added_by": "GospelGenga Studio",
    "added_at": "2026-10-09T04:24:55+08:00"
   },
@@ -426,7 +426,7 @@
    "chapters": "1-22",
    "published_sgt": "2026-10-16 23:35",
    "duration_s": 11025,
-   "views_at_snapshot": 70165,
+   "views_at_snapshot": 72788,
    "added_by": "GospelGenga Studio",
    "added_at": "2026-10-20T03:17:19+08:00"
   },
@@ -440,7 +440,7 @@
    "chapters": "6",
    "published_sgt": "2026-10-20 03:14",
    "duration_s": 791,
-   "views_at_snapshot": 9337,
+   "views_at_snapshot": 9410,
    "added_by": "GospelGenga Studio",
    "added_at": "2026-10-20T03:17:09+08:00"
   },
@@ -454,7 +454,7 @@
    "chapters": "15",
    "published_sgt": "2026-10-22 04:00",
    "duration_s": 580,
-   "views_at_snapshot": 3862,
+   "views_at_snapshot": 3920,
    "added_by": "GospelGenga Studio",
    "added_at": "2026-10-22T04:00:23+08:00"
   },
@@ -468,7 +468,7 @@
    "chapters": "6-7",
    "published_sgt": "2026-10-25 02:00",
    "duration_s": 1148,
-   "views_at_snapshot": 25411,
+   "views_at_snapshot": 31105,
    "added_by": "GospelGenga Studio",
    "added_at": "2026-10-22T04:33:05+08:00"
   },
@@ -482,7 +482,7 @@
    "chapters": "1-6",
    "published_sgt": "2026-10-26 02:00",
    "duration_s": 5063,
-   "views_at_snapshot": 4282,
+   "views_at_snapshot": 4511,
    "added_by": "GospelGenga Studio",
    "added_at": "2026-10-26T02:29:05+08:00"
   },
@@ -496,7 +496,7 @@
    "chapters": "8-9",
    "published_sgt": "2026-10-28 05:00",
    "duration_s": 1354,
-   "views_at_snapshot": 5607,
+   "views_at_snapshot": 6149,
    "added_by": "GospelGenga Studio",
    "added_at": "2026-10-30T07:20:34+08:00"
   },
@@ -510,10 +510,10 @@
    "chapters": "10-11",
    "published_sgt": "2026-10-30 08:32",
    "duration_s": 1090,
-   "views_at_snapshot": 5533,
+   "views_at_snapshot": 6909,
    "added_by": "GospelGenga Studio",
    "added_at": "2026-10-30T08:33:25+08:00"
   }
  ],
- "stats_fetched_at": "2026-11-01T06:31:05+08:00"
+ "stats_fetched_at": "2026-11-02T06:31:07+08:00"
 }
