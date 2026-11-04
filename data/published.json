@@ -2,7 +2,7 @@
  "snapshot": "2026-10-08 SGT, public YouTube watch-page metadata (uploadDate, viewCount, lengthSeconds) for every long-form video on @GospelGenga",
  "channel": {
   "handle": "@GospelGenga",
-  "subscribers_display": "34.2K",
+  "subscribers_display": "34.3K",
   "long_form_videos": 33
  },
  "videos": [
@@ -513,7 +513,21 @@
    "views_at_snapshot": 7873,
    "added_by": "GospelGenga Studio",
    "added_at": "2026-10-30T08:33:25+08:00"
+  },
+  {
+   "id": "genesis-movie-1",
+   "youtube_id": "mDaB80L2UKk",
+   "url": "https://www.youtube.com/watch?v=mDaB80L2UKk",
+   "title": "THE BOOK OF GENESIS: The World Before the Flood | Bible Anime Movie",
+   "lane": "movie",
+   "book": "Genesis",
+   "chapters": "1-11",
+   "published_sgt": "2026-11-04 05:00",
+   "duration_s": 6904,
+   "views_at_snapshot": 7078,
+   "added_by": "GospelGenga Studio",
+   "added_at": "2026-11-05T03:13:22+08:00"
   }
  ],
- "stats_fetched_at": "2026-11-04T06:31:06+08:00"
+ "stats_fetched_at": "2026-11-05T03:13:30+08:00"
 }
