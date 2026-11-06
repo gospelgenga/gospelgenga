@@ -1,7 +1,7 @@
 {
  "total_chapters": 1189,
- "animated_chapters": 52,
- "percent": 4.4,
+ "animated_chapters": 53,
+ "percent": 4.5,
  "books": [
   {
    "book": "Genesis",
@@ -163,7 +163,8 @@
     3,
     4,
     5,
-    6
+    6,
+    7
    ]
   },
   {
@@ -396,5 +397,5 @@
    ]
   }
  ],
- "generated": "2026-11-06T06:27:24+08:00"
+ "generated": "2026-11-07T05:51:44+08:00"
 }
