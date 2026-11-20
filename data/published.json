@@ -2,7 +2,7 @@
  "snapshot": "2026-10-08 SGT, public YouTube watch-page metadata (uploadDate, viewCount, lengthSeconds) for every long-form video on @GospelGenga",
  "channel": {
   "handle": "@GospelGenga",
-  "subscribers_display": "35.7K",
+  "subscribers_display": "35.8K",
   "long_form_videos": 33
  },
  "videos": [
@@ -555,7 +555,21 @@
    "views_at_snapshot": 6922,
    "added_by": "GospelGenga Studio",
    "added_at": "2026-11-14T03:07:39+08:00"
+  },
+  {
+   "id": "daniel-08",
+   "youtube_id": "3hzjJjzCBes",
+   "url": "https://www.youtube.com/watch?v=3hzjJjzCBes",
+   "title": "GOD NAMED THE NEXT TWO EMPIRES BEFORE EITHER RULED (Bible Anime)",
+   "lane": "main",
+   "book": "Daniel",
+   "chapters": "8",
+   "published_sgt": "2026-11-19 05:00",
+   "duration_s": 892,
+   "views_at_snapshot": 2386,
+   "added_by": "GospelGenga Studio",
+   "added_at": "2026-11-20T21:44:04+08:00"
   }
  ],
- "stats_fetched_at": "2026-11-20T06:31:11+08:00"
+ "stats_fetched_at": "2026-11-20T21:44:12+08:00"
 }
